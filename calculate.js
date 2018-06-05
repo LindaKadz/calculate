@@ -24,9 +24,11 @@ class Calculator {
     };
   };
 
-
+console.log("my javascript works");
 var sym = document.getElementById('symbol').value;
 var a = document.getElementById('a').value;
-var b = document.getElementsById('b').value;
-var calculate = new Calculator();
-console.log("calc link working");
+var b = document.getElementById('b').value;
+
+function printResults(){
+  document.getElementById('results').innerHTML = eval(a+sym+b);
+};
